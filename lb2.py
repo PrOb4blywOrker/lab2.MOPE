@@ -1,6 +1,7 @@
 import random as rand
 import math
 variant = 12
+import sys
 m = 6
 y_max = (30 - variant) * 10
 y_min = (20 - variant) * 10
@@ -57,7 +58,8 @@ Rkr = 2
 
 for i in range(len(Ruv)):
     if Ruv[i] > Rkr:
-        print('Помилка, повторіть експеримент')
+        print('Помилка, повторіть експеримент') 
+    sys.exit()
 
 mx1 = (xn[0][0] + xn[1][0] + xn[2][0]) / 3
 mx2 = (xn[0][1] + xn[1][1] + xn[2][1]) / 3
